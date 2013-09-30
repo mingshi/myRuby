@@ -42,7 +42,6 @@ class Mingshi
             puts res[0]
         end
     end
-
 end
 t = Mingshi.new('mingshi', 28)
 t.say_name {puts "test1"}
@@ -51,3 +50,19 @@ t.say_age { puts "test2" }
 t.say_call(proc{puts "Love"})
 t.recycle
 t.res([1,2,3])
+
+a = [1,2,3]
+p a.map {|item| item * 3}
+p a
+
+p a.map! {|item| item * 3}
+p a
+
+arr = [1,2]
+b = [3,4]
+p arr.concat b
+p arr
+
+arr.each_index {|index| p index}
+
+arr.each {|item| p item}
