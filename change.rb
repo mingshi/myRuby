@@ -7,7 +7,7 @@ class Change
     attr_accessor:f
 
     def change
-        size = @f.size
+        size = @f.chomp.size
         final = size - 1
         finalStr = ""
         0.upto(final) do |i|
